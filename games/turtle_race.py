@@ -9,6 +9,7 @@ colors = ["red", "orange", "yellow", "green", "blue", "purple"]
 y_positions = [-70, -40, -10, 20, 50, 80]
 all_turtles = []
 
+
 #Create 6 turtles
 for turtle_index in range(0, 6):
     new_turtle = Turtle(shape="turtle")
