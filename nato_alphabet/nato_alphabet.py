@@ -19,3 +19,11 @@ for (index, row) in student_data_frame.iterrows():
 
 # Keyword Method with iterrows()
 # {new_key:new_value for (index, row) in df.iterrows()}
+nato_alphabet_df = pd.read_csv('nato_phonetic_alphabet.csv')
+nato_alphabet_dict = {}
+#TODO 1. Create a dictionary in this format:
+# {"A": "Alfa", "B": "Bravo"}
+for _index, row in nato_alphabet_df.iterrows():
+    nato_alphabet_dict[row.letter] = row.code
+print(nato_alphabet_dict)
+
