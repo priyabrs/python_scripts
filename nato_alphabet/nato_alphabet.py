@@ -25,5 +25,8 @@ nato_alphabet_dict = {}
 # {"A": "Alfa", "B": "Bravo"}
 for _index, row in nato_alphabet_df.iterrows():
     nato_alphabet_dict[row.letter] = row.code
-print(nato_alphabet_dict)
+# print(nato_alphabet_dict)
+user_name = input('Enter your name: ')
+print([nato_alphabet_dict[char] for char in user_name.upper()])
+#TODO 2. Create a list of the phonetic code words from a word that the user inputs.
 
