@@ -1,2 +1,2 @@
 # python_scripts
-Collection of python scripts (for practice)
+Collection of small python scripts (for practice)
