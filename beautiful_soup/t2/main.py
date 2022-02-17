@@ -8,16 +8,16 @@ yc_webpage = response.text
 
 soup = BeautifulSoup(yc_webpage, 'html.parser')
 article_tag = soup.find_all(name='a', class_='titlelink')
-# #get_text
-# print(article_tag.getText())
+#get_text
+print(article_tag.getText())
 
-# #get specific element from a tag
+#get specific element from a tag
 
-# print(article_tag.get('href'))
+print(article_tag.get('href'))
 
-# #get upvote count
-# upvote_tag = soup.find(name='span', class_='score')
-# print(upvote_tag.getText())
+#get upvote count
+upvote_tag = soup.find(name='span', class_='score')
+print(upvote_tag.getText())
 article_text = []
 article_link = []
 for tag in article_tag:
